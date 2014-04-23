@@ -91,7 +91,7 @@ LOCAL_C_INCLUDES += system/core/include
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
-LOCAL_CFLAGS += $(common_cflags)
+LOCAL_CFLAGS += $(common_cflags) -w
 
 include $(BUILD_SHARED_LIBRARY)
 
@@ -121,7 +121,7 @@ LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 LOCAL_C_INCLUDES += hardware/libhardware_legacy/audio
 
-LOCAL_CFLAGS += $(common_cflags)
+LOCAL_CFLAGS += $(common_cflags) -w
 
 include $(BUILD_SHARED_LIBRARY)
 
